@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tektur&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar ajuda</title>
+    <link rel="stylesheet" href="../styles/mainpg.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/help.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/laço/laçopng1.png" alt="Novembro Azul" class="laco">
+            <a class="titulo" href="../index.html">Novembro Azul</a>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="div1"><a href="../pg/govbr.html" style="color:rgb(255, 255, 255)">Gov.br</a></div>
+        <div class="div2"><a href="../pg/tabs.html" style="color:rgb(255, 255, 255)">Procedimentos</a></div>
+        <div class="div3"><a href="../pg/help.html" style="color:rgb(255, 255, 255)">Buscar ajuda</a></div>
+        <div class="div4"><a href="../pg/ref.html" style="color:rgb(255, 255, 255)">Referências</a></div>
+    </section>
+    <main class="formEntry">
+        <form>
+            <fieldset>
+                <legend>Informações do Paciente</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Histórico Médico</legend>
+                <label>Possui alergias?</label>
+                <input type="radio" id="alergiaSim" name="alergia" value="sim">
+                <label for="alergiaSim">Sim</label>
+                <input type="radio" id="alergiaNao" name="alergia" value="nao">
+                <label for="alergiaNao">Não</label>
+
+                <label for="alergias">Se sim, especifique:</label>
+                <textarea id="alergias" name="alergias" rows="4"></textarea>
+
+                <label>Doenças Crônicas:</label>
+                <input type="checkbox" id="diabetes" name="doencas" value="diabetes">
+                <label for="diabetes">Diabetes</label>
+                <input type="checkbox" id="hipertensao" name="doencas" value="hipertensao">
+                <label for="hipertensao">Hipertensão</label>
+                <input type="checkbox" id="asma" name="doencas" value="asma">
+                <label for="asma">Asma</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Consulta</legend>
+                <label for="medico">Médico Responsável:</label>
+                <input type="text" id="medico" name="medico" required>
+
+                <label for="dataConsulta">Data da Consulta:</label>
+                <input type="date" id="dataConsulta" name="dataConsulta" required>
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</main>
+
+</html>

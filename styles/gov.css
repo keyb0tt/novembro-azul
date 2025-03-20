@@ -1,0 +1,20 @@
+
+.govimg{
+    display: flex;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 40px rgb(73, 173, 255);
+}
+
+.divgov{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:60px;
+}
+
+.orient{
+    margin-top: 50px;
+    padding: 0 600px;
+    color:#fff;
+}
